@@ -1,0 +1,513 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&family=Karla:ital,wght@0,200..800;1,200..800&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rowdies:wght@300;400;700&display=swap");
+
+/* ========== Global Selector ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  /* background-color: aqua; */
+}
+
+
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* .clear {
+  clear: both;
+} */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  width: 8.333333333333333%;
+}
+.col-2 {
+  width: 16.66666666666667%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33333333333333%;
+}
+.col-5 {
+  width: 41.66666666666667%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33333333333333%;
+}
+.col-8 {
+  width: 66.66666666666667%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33333333333333%;
+}
+.col-11 {
+  width: 91.66666666666667%;
+}
+.col-12 {
+  width: 100%;
+}
+
+/* ========================================== */
+
+/* ============== Header-top ================ */
+
+header {
+  /* background-color: rgb(254, 238, 215); */
+  padding: 10px;
+}
+
+header p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: rgb(33, 33, 33);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header .header-top-right .header-top-right-btn {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+
+  /* color:#fff; */
+  /* gap: 20px; */
+  /* padding: 10px 20px; */
+}
+
+header .header-top-right .About,
+header .header-top-right .Store,
+header .header-top-right .News,
+header .header-top-right .FAQ,
+header .header-top-right .Account {
+  display: flex;
+  align-items: center;
+  padding: 6px 15px;
+}
+
+header .header-top-right .About,
+header .header-top-right .Store,
+header .header-top-right .News,
+header .header-top-right .FAQ {
+  border-right: 1px solid rgb(155, 155, 155);
+}
+
+header .header-top-right .About .a-btn,
+header .header-top-right .Store .s-btn,
+header .header-top-right .News .n-btn,
+header .header-top-right .FAQ .f-btn,
+header .header-top-right .Account .ac-btn {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+}
+
+/* ============== Header-top [End} ============== */
+
+.navbar {
+  /* padding: 20px 0; */
+  background-color: #d0d0d0;
+  padding-block: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .navbar-brand {
+  color: rgb(33, 33, 33);
+  text-decoration: none;
+  font-size: 32px;
+  font-weight: 500;
+  display: inline-block;
+  transition-duration: 0.3s;
+}
+
+.navbar .navbar-brand:hover {
+  color: rgb(138, 105, 20);
+}
+
+.navbar .navbar-brand span {
+  background-color: goldenrod;
+  color: #fff;
+  padding: 6px 6px;
+  border-radius: 6px;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  gap: 40px;
+  /* background-color: aqua; */
+  padding: 10px 16px;
+}
+
+.navbar .navbar-nav .navbar-item {
+  list-style-type: none;
+}
+
+.navbar .navbar-nav .navbar-item .shopping-btn i {
+  margin-left: 10px;
+  transition-duration: 0.3s;
+}
+
+.navbar .navbar-nav .navbar-item .navbar-link i {
+  color: rgb(138, 105, 20);
+  font-size: 14px;
+}
+
+.navbar .navbar-nav .navbar-item .navbar-link.active {
+  color: rgb(138, 105, 20);
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .navbar-item .navbar-link {
+  text-decoration: none;
+  color: rgb(33, 33, 33);
+  font-size: 16px;
+  transition-duration: 0.3s;
+}
+
+.navbar .navbar-nav .navbar-item .navbar-link:hover,
+.navbar .navbar-nav .navbar-item .shopping-btn i:hover {
+  color: rgb(138, 105, 20);
+  font-weight: bold;
+}
+
+/* ================================================================= */
+
+/* ======================== Hero-Banner ============================ */
+.hero-banner {
+  height: 90vh;
+  /* background-position: center; */
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-banner .overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.945),
+    rgba(67, 67, 67, 0.534),
+    rgba(48, 48, 48, 0.354)
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* text-align: center; */
+}
+
+.hero-banner .overlay .overlay-content {
+  text-align: center;
+  color: #fff;
+}
+
+.hero-banner .overlay .overlay-content h2 {
+  font-size: 46px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.hero-banner .overlay .overlay-content p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+.hero-banner .overlay .overlay-content .start-btn {
+  font-size: 18px;
+  text-transform: capitalize;
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 28px;
+  background-color: rgb(138, 105, 20);
+  border-radius: 20px;
+  transition-duration: 0.3s;
+}
+
+.hero-banner .overlay .overlay-content .start-btn:hover {
+  background-color: #d0d0d0;
+  color: rgb(138, 105, 20);
+}
+
+/* ================================================================= */
+/* ======================== Popular-Area ============================ */
+/* .amazing-venues-area {
+  padding: 80px 0;
+  background-color: aquamarine;
+} */
+
+.amazing-venues-area {
+  /* background-color: gray; */
+  padding: 100px 0 50px 0;
+  position: relative;
+}
+
+.amazing-venues-area .row {
+  margin-inline: -30px;
+}
+
+.amazing-venues-area .col-9,
+.amazing-venues-area .col-3 {
+  padding-inline: 30px;
+}
+
+.amazing-venues-area .container {
+  height: 100%;
+}
+
+.amazing-venues-area .amazing-wrapper {
+  height: 300px;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: -50%;
+}
+
+.amazing-venues-area .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.amazing-venues-area .swiper-slide {
+  /* height: 200%; */
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amazing-venues-area .swiper-button-prev::after {
+  color: rgb(138, 105, 20);
+  position: absolute;
+  left: 120px;
+}
+
+.amazing-venues-area .swiper-button-next::after {
+  color: rgb(138, 105, 20);
+  position: absolute;
+  right: 120px;
+}
+
+/* +++++++++++++++++++++ Content-left ++++++++++++++++++++++ */
+
+.amazing-venues-area .content-left {
+  margin-top: 50px;
+}
+
+@keyframes colorShift {
+  0% {
+    color: #ff6b6b;
+  }
+  25% {
+    color: #feca57;
+  }
+  50% {
+    color: #48dbfb;
+  }
+  75% {
+    color: #1dd1a1;
+  }
+  100% {
+    color: #ff6b6b;
+  }
+}
+.amazing-venues-area .content-left h2 {
+  font-family: "Pacifico", cursive;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: rgb(39, 39, 39);
+  animation: colorShift 4s linear infinite;
+}
+
+.amazing-venues-area .content-left p {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* +++++++++++++++++++++ Content-Right ++++++++++++++++++++++ */
+
+.amazing-venues-area .content-right {
+  margin-top: 120px;
+}
+
+.amazing-venues-area .content-right h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: rgb(32, 32, 32);
+}
+
+.amazing-venues-area .content-right p {
+  /* text-align: justify; */
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.amazing-venues-area .content-right .location-text {
+  margin-left: 50px;
+  font-family: "Rowdies", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.amazing-venues-area .location-content {
+  list-style-type: none;
+  /* padding: 8px 6px; */
+  /* background-color: aquamarine; */
+  margin-left: 40px;
+}
+
+.amazing-venues-area .location-content .location-sym {
+  font-size: 20px;
+  display: flex;
+  gap: 10px;
+  /* padding-left: 10px; */
+}
+
+.amazing-venues-area .location-content .location-sym i {
+  transition-duration: 0.3s;
+}
+
+.amazing-venues-area .location-content .location-sym i:hover {
+  color: rgb(138, 105, 20);
+  transform: translateY(-40%);
+}
+
+/* =================== Sale-Area ================== */
+
+marquee{
+  margin-bottom: 100px;
+  padding: 14px 12px;
+  background-color: rgba(218, 165, 32, 0.954);
+}
+
+.p-marque{
+  font-size: 20px;
+  color: #fff;
+  font-weight: 500;
+}
+
+
+
+.sale-area {
+  padding: 80px 0;
+  margin-top: 350px;
+  /* background-color: #ff6b6b; */
+}
+
+.sale-area .row {
+  margin-inline: -15px;
+}
+
+.sale-area .col-3 {
+  padding-inline: 15px;
+}
+
+.sale-area .sale-content {
+  margin-top: -20px;
+}
+
+@keyframes bounceLoop {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.sale-area .sale-content h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  animation: bounceLoop 1s ease-in-out infinite;
+}
+
+.sale-area .card-sale {
+  padding: 6px;
+  /* background-color: antiquewhite; */
+  border: 1px solid rgb(152, 152, 152);
+  box-shadow: 0 0 15px rgba(255, 99, 71, 0.4);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sale-area .card-sale .card-sale-body {
+  padding-top: 20px;
+  text-transform: capitalize;
+}
+
+/* .sale-area .card-sale .card-sale-body .s-name{
+  margin-bottom: 6px;
+
+}
+
+.sale-area .card-sale .card-sale-body .s-price{
+  color: green;
+} */
+
+.sale-area .card-sale .card-sale-body .t-content .t-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sale-area .card-sale .card-sale-body .t-text .t-price {
+  color: green;
+  font-weight: 500;
+}
+
+.sale-area .card-sale .card-sale-body .s-btn {
+  display: block;
+  margin-top: 20px;
+  padding: 10px 16px;
+  background-color: rgb(138, 105, 20);
+  color: #fff;
+  text-align: center;
+  transition-duration: 0.3s;
+  margin-bottom: 6px;
+}
+
+.sale-area .card-sale .card-sale-body .s-btn:hover {
+  background-color: rgb(120, 120, 120);
+  /* color: rgb(29, 29, 29); */
+}
